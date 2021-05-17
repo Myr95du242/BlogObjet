@@ -1,9 +1,4 @@
 <?php
- /*phpinfo(); 
-	 echo '<pre>';
-        print_r($_SERVER);
-        echo  '</pre>';*/
-
     class Blog{
     	private $id_contenu;
     	private $titre;
@@ -11,9 +6,14 @@
     	private $commentaire;
     	private $photo;
 
-    	public function __construct($titre,$date_contenu,$commentaire,$photo)
+    	public function __construct($titreContenu,$commentaireContenu,$commentairePhoto)
     	{
-
+            echo 'Appel du constructeur <br/>';
+            //$this->setIdContenu($idContenu);
+            $this->setTitre($titreContenu);
+           // $this->setDateContenu($dateContenu);
+            $this->setCommentaire($commentaireContenu);
+            $this->setPhoto($commentairePhoto);
     	}
 
     //Setter and getter
@@ -40,7 +40,7 @@
     		    			$this->commentaire= $commentaire;
     	 	}    		
     	}
-    	public function setPhoto($photo){
+    	public function setPhoto($photo){        
     		$this->photo=$photo;   		
     	}
     }
