@@ -15,9 +15,9 @@
 			<label>Commentaire</label><br/>
 			<textarea name="message"></textarea><br/>
 		</p>
-		<input type="hidden" name="MAX_FILE_SIZE" value="2097152">
+		<input type="hidden" name="MAX_FILE_SIZE" value="2097152"/>
 		<p>Choisissez votre photo</p>
-		<input type="file" name="photo"><br/>
+		<input type="file" name="photo"/><br/>
 		<input type="submit" name="envoyer" value="send"/>
 	</form>
 	<br/><a href="affichage.php">Affichez le formulaire renseigné </a><br/>
