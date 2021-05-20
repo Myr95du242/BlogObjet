@@ -8,7 +8,7 @@
 
         public function __construct($titreContenu,$dateContenu,$commentaireContenu,$commentairePhoto)
         {
-            echo 'Appel du constructeur <br/>';
+           // echo 'Appel du constructeur <br/>';
             //$this->setIdContenu($idContenu);
             $this->setTitre($titreContenu);
             $this->setDateContenu($dateContenu);

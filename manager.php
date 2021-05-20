@@ -6,7 +6,7 @@ class Manager{
 
 	//constructeur de la classe Manager
 	public function __construct($bdd){
-		echo 'Appel du constructeur Manager <br/>';
+		//echo 'Appel du constructeur Manager <br/>';
 		$this->setBdd($bdd);
 	}
 
@@ -19,7 +19,7 @@ class Manager{
 	public function getBddContenu(){
 		$tabContenu=array();
 		$compteur=0; // variable compteur afin d'incrémenter la table tabContenu
-		$req_sql= "SELECT * FROM contenu ORDER BY date_contenu LIMIT 0,3";
+		$req_sql= "SELECT * FROM contenu ORDER BY date_contenu DESC LIMIT 0,3";
 		$resultat= $this->bdd->query($req_sql);
 
 		while ($data=$resultat->fetch()) 

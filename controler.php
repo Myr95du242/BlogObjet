@@ -19,7 +19,6 @@ $base= new PDO('mysql:host=localhost;dbname=blogobjet;charset=utf8','root','',ar
 		}
 	}else{
 		echo "Aucune erreur avec le fichier <br/> ";
-		
 		if( (isset($_FILES['photo']['name'] ) && ($_FILES['photo']['error']== UPLOAD_ERR_OK) )){
 			$destination="postes/";
 			move_uploaded_file($_FILES['photo']['tmp_name'], $destination.$_FILES['photo']['name']);
